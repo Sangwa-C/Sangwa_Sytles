@@ -39,6 +39,7 @@
             android:id="@+id/image1"
             android:layout_width="199dp"
             android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
             android:src="@drawable/twomen">
 
         </ImageView>
@@ -47,7 +48,7 @@
                 android:id="@+id/image2"
                 android:layout_width="175dp"
                 android:layout_height="100dp"
-                android:src="@drawable/men"
+                android:src="@drawable/men2"
                 android:layout_marginRight="50dp">
 
             </ImageView>
@@ -66,7 +67,7 @@
             android:layout_width="200dp"
             android:layout_height="100dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/men2">
+            android:src="@drawable/men">
 
         </ImageView>
 
