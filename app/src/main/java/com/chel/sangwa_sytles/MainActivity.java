@@ -23,18 +23,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-            @Override
-            public void onClick(View v) {
-//                if (v == mGalleryButton) {
+    @Override
+    public void onClick(View v) {
 
-                    Intent cheHome = new Intent(MainActivity.this, ImagesActivity.class);
+        Intent cheHome = new Intent(MainActivity.this, ImagesActivity.class);
+        startActivity(cheHome);
 
-                    startActivity(cheHome);
-
-
-//                }
-            }
-
+    }
 
 }
 
