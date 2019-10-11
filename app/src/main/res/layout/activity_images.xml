@@ -103,12 +103,12 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/locationEditText"
+        android:id="@+id/clotheWanted"
         android:background="@color/colorAccent"
         android:layout_above="@+id/listedButton"
         android:layout_marginBottom="10dp"
-        android:padding="5dp"
-        android:hint="Enter Zip Code"
+        android:padding="10dp"
+        android:hint="Types of Cloth"
         android:layout_centerHorizontal="true" />
 
 
