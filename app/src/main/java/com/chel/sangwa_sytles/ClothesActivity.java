@@ -39,9 +39,8 @@ public class ClothesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_clothes);
 
         ButterKnife.bind(this);
-
-
-
+        Intent cheHome = getIntent();
+        String clothType = cheHome.getStringExtra("clothType");
         sangwa_stylesArrayAdapter cece = new sangwa_stylesArrayAdapter(this, android.R.layout.simple_list_item_1, clothes, prices);
 
         mClothList.setAdapter(cece);
@@ -52,7 +51,7 @@ public class ClothesActivity extends AppCompatActivity {
                 Toast.makeText(ClothesActivity.this, clothes, Toast.LENGTH_LONG).show();
             }
         });
-
+        mClothesTextView.setText(clothType + " cloth");
     }
 
 

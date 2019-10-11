@@ -22,8 +22,6 @@ public class ImagesActivity extends AppCompatActivity  {
 
         mListedButton = (Button) findViewById(R.id.listedButton);
         mClothesTextView=(EditText) findViewById(R.id.clotheWanted);
-        Intent cheHome = getIntent();
-        String clothType = cheHome.getStringExtra("clothType");
         mListedButton.setOnClickListener ( new View.OnClickListener(){
             @Override
             public void onClick(View V){
@@ -34,7 +32,7 @@ public class ImagesActivity extends AppCompatActivity  {
 
             }
         });
-        mClothesTextView.setText(" user input" + clothType);
+
     }
 
 }
