@@ -108,14 +108,14 @@
         </LinearLayout>
 
 
-<!--    <Button-->
-<!--        android:id="@+id/listedButton"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:background="@color/colorAccent"-->
-<!--        android:text="Store" />-->
+    <Button
+        android:id="@+id/listedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:text="Store" />
 
 
 </RelativeLayout>
