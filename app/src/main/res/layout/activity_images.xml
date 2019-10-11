@@ -87,15 +87,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/image5"-->
-<!--            android:layout_width="202dp"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:src="@drawable/women_sports"-->
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="202dp"
+            android:layout_height="100dp"
+            android:src="@drawable/women_sports"
 
-<!--            >-->
+            >
 
-<!--        </ImageView>-->
+        </ImageView>
 
 <!--        <ImageView-->
 <!--            android:id="@+id/image6"-->
