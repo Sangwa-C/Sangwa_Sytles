@@ -22,18 +22,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mGalleryButton.setOnClickListener (this);
     }
 
-//
-//            @Override
-//            public void onClick(View v) {
-////                if (v == mGalleryButton) {
-//
-//                    Intent cheHome = new Intent(MainActivity.this, ImagesActivity.class);
-//
-//                    startActivity(cheHome);
-//
-//
-////                }
-//            }
+
+            @Override
+            public void onClick(View v) {
+//                if (v == mGalleryButton) {
+
+                    Intent cheHome = new Intent(MainActivity.this, ImagesActivity.class);
+
+                    startActivity(cheHome);
+
+
+//                }
+            }
 
 
 }
