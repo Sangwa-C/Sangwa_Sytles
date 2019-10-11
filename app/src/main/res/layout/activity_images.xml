@@ -71,14 +71,6 @@
 
         </ImageView>
 
-        <ImageView
-            android:id="@+id/image4"
-            android:layout_width="179dp"
-            android:layout_height="100dp"
-            android:src="@drawable/women2"
-            android:layout_marginBottom="20dp">
-
-        </ImageView>
 
     </LinearLayout>
 
