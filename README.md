@@ -10,7 +10,7 @@ In this applications users can buy clothe both woman and amn, ranging from summe
 
 ## BDD
 
-**The program should allow the user input*
+**The program should allow the user input**
 
     Input Example: "Cloth type: jean"
 
