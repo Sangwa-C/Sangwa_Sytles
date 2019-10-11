@@ -35,13 +35,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/image1"-->
-<!--            android:layout_width="199dp"-->
-<!--            android:layout_height="124dp"-->
-<!--            android:src="@drawable/twomen">-->
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="199dp"
+            android:layout_height="124dp"
+            android:src="@drawable/twomen">
 
-<!--        </ImageView>-->
+        </ImageView>
 
 <!--            <ImageView-->
 <!--                android:id="@+id/image2"-->
