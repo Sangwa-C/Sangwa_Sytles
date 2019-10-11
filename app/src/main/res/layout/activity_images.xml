@@ -28,12 +28,12 @@
         android:textStyle="bold"
         app:fontFamily="@font/allura" />
 
-<!--    <LinearLayout-->
-<!--            android:id="@+id/layout1"-->
-<!--            android:layout_weight="8"-->
-<!--            android:layout_below="@+id/hGallery"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
+    <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_weight="8"
+            android:layout_below="@+id/hGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 <!--        <ImageView-->
 <!--            android:id="@+id/image1"-->
@@ -52,7 +52,7 @@
 
 <!--            </ImageView>-->
 
-<!--        </LinearLayout>-->
+        </LinearLayout>
 
 <!--    <LinearLayout-->
 <!--        android:id="@+id/layout2"-->
