@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E4E9E8"
     tools:context=".ClothesActivity">
 
     <TextView
@@ -23,17 +24,20 @@
         android:layout_marginBottom="40dp"
         android:layout_weight="1"
         android:text="Store"
-        android:textColor="@color/colorAccent"
+        android:textColor="#1F7266"
         android:textSize="30dp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <ListView
+        android:id="@+id/clothList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/clothList"
         android:layout_below="@+id/clothesTextView"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginRight="-10dp"
+        android:textColor="#EBC2C2" />
 
 </RelativeLayout>

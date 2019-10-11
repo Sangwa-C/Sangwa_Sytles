@@ -23,7 +23,7 @@
         android:layout_marginBottom="40dp"
         android:layout_weight="1"
         android:text="Gallery"
-        android:textColor="@color/colorAccent"
+        android:textColor="#1E5E50"
         android:textSize="30dp"
         android:textStyle="bold"
         app:fontFamily="@font/allura" />
@@ -101,15 +101,16 @@
         </LinearLayout>
 
     <EditText
+        android:id="@+id/clotheWanted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/clotheWanted"
-        android:background="@color/colorAccent"
         android:layout_above="@+id/listedButton"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:padding="10dp"
+        android:background="#84AFAC"
         android:hint="Types of Cloth"
-        android:layout_centerHorizontal="true" />
+        android:padding="10dp"
+        android:textColor="#A78175" />
 
 
     <Button
@@ -118,8 +119,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorAccent"
-        android:text="Store" />
+        android:background="#25533D"
+        android:text="Store"
+        android:textColor="#FFA78D" />
 
 
 </RelativeLayout>
