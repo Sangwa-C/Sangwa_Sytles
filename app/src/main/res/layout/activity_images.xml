@@ -97,13 +97,13 @@
 
         </ImageView>
 
-<!--        <ImageView-->
-<!--            android:id="@+id/image6"-->
-<!--            android:layout_width="172dp"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:src="@drawable/men_kitenge">-->
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="172dp"
+            android:layout_height="100dp"
+            android:src="@drawable/men_kitenge">
 
-<!--        </ImageView>-->
+        </ImageView>
 
         </LinearLayout>
 
