@@ -20,7 +20,6 @@ public class ClothesActivity extends AppCompatActivity {
     @BindView(R.id.clothList) ListView mClothList;
 
 
-
     private String[] clothes = new String[] {"Blazers", "Tops 0r Tunics",
             "RoadSter", "Pullovers", "Short Coats", "Keen-Length Coats",
             "Evenning Dresses", "Carnival Dresses", "Short Skirt", "Twin Sets",
@@ -40,9 +39,11 @@ public class ClothesActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
         Intent cheHome = getIntent();
-        String clothType = cheHome.getStringExtra("clothType");
-        sangwa_stylesArrayAdapter cece = new sangwa_stylesArrayAdapter(this, android.R.layout.simple_list_item_1, clothes, prices);
 
+        String clothType = cheHome.getStringExtra("clothType");
+
+
+        sangwa_stylesArrayAdapter cece = new sangwa_stylesArrayAdapter(this, android.R.layout.simple_list_item_1, clothes, prices);
         mClothList.setAdapter(cece);
         mClothList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
@@ -51,7 +52,7 @@ public class ClothesActivity extends AppCompatActivity {
                 Toast.makeText(ClothesActivity.this, clothes, Toast.LENGTH_LONG).show();
             }
         });
-        mClothesTextView.setText(clothType + " cloth");
+        mClothesTextView.setText("for " +clothType + " cloth");
     }
 
 
