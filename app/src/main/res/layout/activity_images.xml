@@ -108,7 +108,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:background="#84AFAC"
-        android:hint="Types of Cloth"
+        android:hint="!Type a cloth!"
         android:padding="10dp"
         android:textColor="#A78175" />
 
