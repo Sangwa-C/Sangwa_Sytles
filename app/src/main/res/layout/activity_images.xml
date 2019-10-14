@@ -108,7 +108,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:background="#84AFAC"
-        android:hint="!Type a cloth!"
+        android:hint="~Type in  a cloth name~"
         android:padding="10dp"
         android:textColor="#A78175" />
 
