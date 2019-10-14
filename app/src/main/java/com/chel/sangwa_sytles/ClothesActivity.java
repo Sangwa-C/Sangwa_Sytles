@@ -22,7 +22,7 @@ public class ClothesActivity extends AppCompatActivity {
 
     private String[] clothes = new String[] {"Blazers", "Tops 0r Tunics",
             "RoadSter", "Pullovers", "Short Coats", "Keen-Length Coats",
-            "Evenning Dresses", "Carnival Dresses", "Short Skirt", "Twin Sets",
+            "Evening Dresses", "Carnival Dresses", "Short Skirt", "Twin Sets",
             "Causal Trousers", "Dhotis", "Jeans",
             "Formal Shirts", "Summer Wear"};
 
@@ -42,8 +42,8 @@ public class ClothesActivity extends AppCompatActivity {
 
         String clothType = cheHome.getStringExtra("clothType");
 
-
         sangwa_stylesArrayAdapter cece = new sangwa_stylesArrayAdapter(this, android.R.layout.simple_list_item_1, clothes, prices);
+
         mClothList.setAdapter(cece);
         mClothList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
@@ -52,7 +52,7 @@ public class ClothesActivity extends AppCompatActivity {
                 Toast.makeText(ClothesActivity.this, clothes, Toast.LENGTH_LONG).show();
             }
         });
-        mClothesTextView.setText("for " +clothType + " cloth");
+        mClothesTextView.setText("For this search "  + " ' "  + clothType   + " ' " + " we have: ");
     }
 
 
