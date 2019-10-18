@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import retrofit2.Call;
 
 public class ClothesActivity extends AppCompatActivity {
     @BindView(R.id.clothesTextView) TextView mClothesTextView;
@@ -42,6 +43,11 @@ public class ClothesActivity extends AppCompatActivity {
         Intent cheHome = getIntent();
         String clothType = cheHome.getStringExtra("clothType");
         sangwa_stylesArrayAdapter cece = new sangwa_stylesArrayAdapter(this, android.R.layout.simple_list_item_1, clothes, prices);
+
+        YelpApi client = YelpClient.getClient();
+
+        Call<YelpBusinessesSearchResponse> call = client.getRestaurants(location, "restaurants");
+
 
         mClothList.setAdapter(cece);
         mClothList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
