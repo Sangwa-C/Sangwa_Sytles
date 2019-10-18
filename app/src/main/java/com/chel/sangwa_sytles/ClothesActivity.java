@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.AdapterView;
 import android.widget.Toast;
@@ -24,7 +25,8 @@ import retrofit2.Response;
 public class ClothesActivity extends AppCompatActivity {
     @BindView(R.id.clothesTextView) TextView mClothesTextView;
     @BindView(R.id.clothList) ListView mClothList;
-
+    @BindView(R.id.errorTextView) TextView mErrorTextView;
+    @BindView(R.id.progressBar) ProgressBar mProgressBar;
 
 
     private String[] clothes = new String[] {"Blazers", "Tops 0r Tunics",
