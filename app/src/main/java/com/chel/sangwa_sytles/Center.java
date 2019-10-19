@@ -6,12 +6,12 @@ import com.google.gson.annotations.SerializedName;
 
 public class Center {
 
-    @SerializedName("latitude")
-    @Expose
-    private Double latitude;
     @SerializedName("longitude")
     @Expose
     private Double longitude;
+    @SerializedName("latitude")
+    @Expose
+    private Double latitude;
 
     /**
      * No args constructor for use in serialization
@@ -25,17 +25,9 @@ public class Center {
      * @param longitude
      * @param latitude
      */
-    public Center(Double latitude, Double longitude) {
+    public Center(Double longitude, Double latitude) {
         super();
-        this.latitude = latitude;
         this.longitude = longitude;
-    }
-
-    public Double getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(Double latitude) {
         this.latitude = latitude;
     }
 
@@ -45,6 +37,14 @@ public class Center {
 
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
+    }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
     }
 
 }

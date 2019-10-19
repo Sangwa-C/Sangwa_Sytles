@@ -1,32 +1,36 @@
 
 package com.chel.sangwa_sytles;
 
+import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Location {
 
-    @SerializedName("city")
+    @SerializedName("address1")
     @Expose
-    private String city;
-    @SerializedName("country")
-    @Expose
-    private String country;
+    private String address1;
     @SerializedName("address2")
     @Expose
     private String address2;
     @SerializedName("address3")
     @Expose
     private String address3;
-    @SerializedName("state")
+    @SerializedName("city")
     @Expose
-    private String state;
-    @SerializedName("address1")
-    @Expose
-    private String address1;
+    private String city;
     @SerializedName("zip_code")
     @Expose
     private String zipCode;
+    @SerializedName("country")
+    @Expose
+    private String country;
+    @SerializedName("state")
+    @Expose
+    private String state;
+    @SerializedName("display_address")
+    @Expose
+    private List<String> displayAddress = null;
 
     /**
      * No args constructor for use in serialization
@@ -37,6 +41,7 @@ public class Location {
 
     /**
      * 
+     * @param displayAddress
      * @param zipCode
      * @param state
      * @param address1
@@ -45,31 +50,24 @@ public class Location {
      * @param country
      * @param city
      */
-    public Location(String city, String country, String address2, String address3, String state, String address1, String zipCode) {
+    public Location(String address1, String address2, String address3, String city, String zipCode, String country, String state, List<String> displayAddress) {
         super();
-        this.city = city;
-        this.country = country;
+        this.address1 = address1;
         this.address2 = address2;
         this.address3 = address3;
-        this.state = state;
-        this.address1 = address1;
-        this.zipCode = zipCode;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
         this.city = city;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
+        this.zipCode = zipCode;
         this.country = country;
+        this.state = state;
+        this.displayAddress = displayAddress;
+    }
+
+    public String getAddress1() {
+        return address1;
+    }
+
+    public void setAddress1(String address1) {
+        this.address1 = address1;
     }
 
     public String getAddress2() {
@@ -88,20 +86,12 @@ public class Location {
         this.address3 = address3;
     }
 
-    public String getState() {
-        return state;
+    public String getCity() {
+        return city;
     }
 
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getAddress1() {
-        return address1;
-    }
-
-    public void setAddress1(String address1) {
-        this.address1 = address1;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getZipCode() {
@@ -110,6 +100,30 @@ public class Location {
 
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public List<String> getDisplayAddress() {
+        return displayAddress;
+    }
+
+    public void setDisplayAddress(List<String> displayAddress) {
+        this.displayAddress = displayAddress;
     }
 
 }

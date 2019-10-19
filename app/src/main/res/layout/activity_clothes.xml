@@ -7,6 +7,16 @@
     android:background="#E4E9E8"
     tools:context=".ClothesActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clothesTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
     <ListView
         android:id="@+id/clothList"
         android:layout_width="match_parent"
@@ -26,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
+
     <TextView
         android:id="@+id/clothesTextView"
         android:layout_width="148dp"
