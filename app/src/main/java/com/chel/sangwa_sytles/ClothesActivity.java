@@ -53,6 +53,4 @@ public class ClothesActivity extends AppCompatActivity {
         });
         mClothesTextView.setText(clothType + " cloth");
     }
-
-
 }
