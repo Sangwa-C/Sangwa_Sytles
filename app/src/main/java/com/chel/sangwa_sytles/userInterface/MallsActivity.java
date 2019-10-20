@@ -34,17 +34,19 @@ public class MallsActivity extends AppCompatActivity {
     @BindView(R.id.progressBar) ProgressBar mProgressBar;
 
     private MallsListAdapter mMallAdapter;
-    public List<Business> clothes;
+    public List<Business> mall;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_malls);
-        ButterKnife.bind(this);
 
+        ButterKnife.bind(this);
         Intent cheHome = getIntent();
+
         String mallLocation = cheHome.getStringExtra("mallLocation");
+
         YelpApi client = YelpClient.getClient();
 
         Call<YelpBusinessesSearchResponse> call = client.getMalls(mallLocation, "clothes");
@@ -56,8 +58,8 @@ public class MallsActivity extends AppCompatActivity {
                 hideProgressBar();
 
                 if (response.isSuccessful()) {
-                    clothes = response.body().getBusinesses();
-                    mMallAdapter = new MallsListAdapter(MallsActivity.this, clothes);
+                    mall = response.body().getBusinesses();
+                    mMallAdapter = new MallsListAdapter(MallsActivity.this, mall);
                     mRecyclerView.setAdapter(mMallAdapter);
                     RecyclerView.LayoutManager layoutManager =
                             new LinearLayoutManager(MallsActivity.this);

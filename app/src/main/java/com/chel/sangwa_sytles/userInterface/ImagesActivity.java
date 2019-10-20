@@ -17,6 +17,8 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
 
     @BindView(R.id.listedButton) Button mListedButton;
     @BindView(R.id.clotheWanted) EditText mClotheWanted;
+    @BindView(R.id.findMallButton) Button mFindMallButton;
+    @BindView(R.id.locationEditText) EditText mLocationEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,16 +30,25 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
         ButterKnife.bind(this);
 
         mListedButton.setOnClickListener(this);
+        mFindMallButton.setOnClickListener(this);
     }
     @Override
     public void onClick(View v){
 
-//                Intent cheHome = getIntent();
-        String clothType = mClotheWanted.getText().toString();
+        if(v == mListedButton) {
+            String clothType = mClotheWanted.getText().toString();
+            Intent cheHome = new Intent(ImagesActivity.this, ClothesActivity.class);
+            cheHome.putExtra("clothType", clothType);
+            startActivity(cheHome);
+        }
 
-        Intent cheHome = new Intent(ImagesActivity.this, ClothesActivity.class);
-        cheHome.putExtra("clothType", clothType);
-        startActivity(cheHome);
+        if(v == mFindMallButton) {
+            String clothType = mLocationEditText.getText().toString();
+            Intent cheHome = new Intent(ImagesActivity.this, MallsActivity.class);
+//            cheHome.putExtra("clothType", clothType);
+            startActivity(cheHome);
+        }
+
 
     }
 
