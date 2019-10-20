@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImagesActivity">
+    tools:context=".userInterface.ImagesActivity">
 
     <TextView
         android:id="@+id/hGallery"
@@ -100,28 +100,74 @@
 
         </LinearLayout>
 
-    <EditText
-        android:id="@+id/clotheWanted"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/listedButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:background="#84AFAC"
-        android:hint="Types of Cloth"
-        android:padding="10dp"
-        android:textColor="#A78175" />
-
-
-    <Button
-        android:id="@+id/listedButton"
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_below="@+id/layout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="#25533D"
-        android:text="Store"
-        android:textColor="#FFA78D" />
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/clotheWanted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="#84AFAC"
+            android:hint="Search From our store"
+            android:padding="10dp"
+            android:textColor="#A78175" />
+
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/findRestaurantsButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="#84BFAC"
+            android:hint="Search Boutiques"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_below="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/listedButton"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:background="#25533D"
+            android:text="Store"
+            android:textColor="#FFA78D"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="200dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="505dp" />
+
+        <Button
+            android:id="@+id/findRestaurantsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Boutiques"
+            android:textColor="#FFA78D"
+            android:background="@color/colorAccent"
+            />
+
+
+
+    </LinearLayout>
+
+
+
 
 
 </RelativeLayout>

@@ -3,7 +3,7 @@ package com.chel.sangwa_sytles;
 import android.content.Context;
 import android.widget.ArrayAdapter;
 
-class sangwa_stylesArrayAdapter extends ArrayAdapter {
+public class sangwa_stylesArrayAdapter extends ArrayAdapter {
     private Context mContext;
     private String[] mClothes;
     private String[] mPrices;

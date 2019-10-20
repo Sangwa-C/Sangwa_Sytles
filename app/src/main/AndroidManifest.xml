@@ -9,31 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
-
-
-        <activity android:name=".ClothesActivity">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.chel.sangwa_sytles.ClothesActivity">
-        </meta-data>
-    </activity>
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".userInterface.MallsActivity"></activity>
+        <activity android:name=".userInterface.ClothesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chel.sangwa_sytles.userInterface.ClothesActivity" />
+        </activity>
+        <activity android:name=".userInterface.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ImagesActivity">
+        <activity android:name=".userInterface.ImagesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="preloaded_fonts"
