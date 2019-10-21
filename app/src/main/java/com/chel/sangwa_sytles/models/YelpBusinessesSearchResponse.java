@@ -4,9 +4,11 @@ package com.chel.sangwa_sytles.models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
 import java.util.List;
 
-
+@Parcel
 public class YelpBusinessesSearchResponse {
 
     @SerializedName("total")
