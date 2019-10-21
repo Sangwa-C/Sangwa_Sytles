@@ -14,6 +14,7 @@ public class sangwa_stylesArrayAdapter extends ArrayAdapter {
         this.mClothes = mClothes;
         this.mPrices = mPrices;
     }
+
     @Override
     public Object getItem(int position) {
         String clothes = mClothes[position];

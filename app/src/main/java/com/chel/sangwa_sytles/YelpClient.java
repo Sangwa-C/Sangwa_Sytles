@@ -1,4 +1,6 @@
-package com.chel.sangwa_sytles.networks;
+package com.chel.sangwa_sytles;
+
+import com.chel.sangwa_sytles.YelpApi;
 
 import java.io.IOException;
 

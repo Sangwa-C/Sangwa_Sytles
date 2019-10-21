@@ -1,4 +1,4 @@
-package com.chel.sangwa_sytles.userInterface;
+package com.chel.sangwa_sytles;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import com.chel.sangwa_sytles.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button mGalleryButton;

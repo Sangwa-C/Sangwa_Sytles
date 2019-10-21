@@ -1,5 +1,5 @@
 
-package com.chel.sangwa_sytles.models;
+package com.chel.sangwa_sytles;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -12,13 +12,13 @@ public class Region {
 
     /**
      * No args constructor for use in serialization
-     * 
+     *
      */
     public Region() {
     }
 
     /**
-     * 
+     *
      * @param center
      */
     public Region(Center center) {

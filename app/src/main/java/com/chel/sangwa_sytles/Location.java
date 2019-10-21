@@ -1,5 +1,5 @@
 
-package com.chel.sangwa_sytles.models;
+package com.chel.sangwa_sytles;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -30,13 +30,13 @@ public class Location {
 
     /**
      * No args constructor for use in serialization
-     * 
+     *
      */
     public Location() {
     }
 
     /**
-     * 
+     *
      * @param zipCode
      * @param state
      * @param address1

@@ -1,4 +1,4 @@
-package com.chel.sangwa_sytles.userInterface;
+package com.chel.sangwa_sytles;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.chel.sangwa_sytles.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -43,9 +41,9 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         if(v == mFindMallButton) {
-            String clothType = mLocationEditText.getText().toString();
+            String rwanda = mLocationEditText.getText().toString();
             Intent cheHome = new Intent(ImagesActivity.this, MallsActivity.class);
-//            cheHome.putExtra("clothType", clothType);
+           cheHome.putExtra("kigali", rwanda);
             startActivity(cheHome);
         }
 

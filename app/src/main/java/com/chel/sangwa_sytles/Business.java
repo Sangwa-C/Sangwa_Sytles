@@ -1,5 +1,5 @@
 
-package com.chel.sangwa_sytles.models;
+package com.chel.sangwa_sytles;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -56,13 +56,13 @@ public class Business {
 
     /**
      * No args constructor for use in serialization
-     * 
+     *
      */
     public Business() {
     }
 
     /**
-     * 
+     *
      * @param transactions
      * @param phone
      * @param location

@@ -12,19 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
 
-        <activity android:name=".userInterface.ClothesActivity">
+        <activity android:name=".ClothesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.chel.sangwa_sytles.userInterface.ClothesActivity" />
+                android:value="com.chel.sangwa_sytles.ClothesActivity" />
         </activity>
 
-        <activity android:name=".userInterface.MallsActivity">
+        <activity android:name=".MallsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.chel.sangwa_sytles.userInterface.MallsActivity" />
+                android:value="com.chel.sangwa_sytles.MallsActivity" />
         </activity>
 
-        <activity android:name=".userInterface.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".userInterface.ImagesActivity">
+        <activity android:name=".ImagesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

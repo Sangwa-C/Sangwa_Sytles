@@ -1,5 +1,5 @@
 
-package com.chel.sangwa_sytles.models;
+package com.chel.sangwa_sytles;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -20,13 +20,13 @@ public class YelpBusinessesSearchResponse {
 
     /**
      * No args constructor for use in serialization
-     * 
+     *
      */
     public YelpBusinessesSearchResponse() {
     }
 
     /**
-     * 
+     *
      * @param region
      * @param total
      * @param businesses
