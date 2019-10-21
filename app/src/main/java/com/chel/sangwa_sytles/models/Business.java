@@ -1,68 +1,69 @@
 
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+
+
 import java.util.List;
+
 
 public class Business {
 
     @SerializedName("rating")
     @Expose
-    private double rating;
+    public Double rating;
     @SerializedName("price")
     @Expose
-    private String price;
+    public String price;
     @SerializedName("phone")
     @Expose
-    private String phone;
+    public String phone;
     @SerializedName("id")
     @Expose
-    private String id;
+    public String id;
     @SerializedName("alias")
     @Expose
-    private String alias;
+    public String alias;
     @SerializedName("is_closed")
     @Expose
-    private Boolean isClosed;
+    public Boolean isClosed;
     @SerializedName("categories")
     @Expose
-    private List<Category> categories = null;
+    public List<Category> categories = null;
     @SerializedName("review_count")
     @Expose
-    private Integer reviewCount;
+    public Integer reviewCount;
     @SerializedName("name")
     @Expose
-    private String name;
+    public String name;
     @SerializedName("url")
     @Expose
-    private String url;
+    public String url;
     @SerializedName("coordinates")
     @Expose
-    private Coordinates coordinates;
+    public Coordinates coordinates;
     @SerializedName("image_url")
     @Expose
-    private String imageUrl;
+    public String imageUrl;
     @SerializedName("location")
     @Expose
-    private Location location;
+    public Location location;
     @SerializedName("distance")
     @Expose
-    private Double distance;
+    public Double distance;
     @SerializedName("transactions")
     @Expose
-    private List<String> transactions = null;
+    public List<String> transactions = null;
 
     /**
      * No args constructor for use in serialization
-     *
      */
     public Business() {
     }
 
     /**
-     *
      * @param transactions
      * @param phone
      * @param location
@@ -79,7 +80,7 @@ public class Business {
      * @param isClosed
      * @param coordinates
      */
-    public Business(double rating, String price, String phone, String id, String alias, Boolean isClosed, List<Category> categories, Integer reviewCount, String name, String url, Coordinates coordinates, String imageUrl, Location location, Double distance, List<String> transactions) {
+    public Business(Double rating, String price, String phone, String id, String alias, Boolean isClosed, List<Category> categories, Integer reviewCount, String name, String url, Coordinates coordinates, String imageUrl, Location location, Double distance, List<String> transactions) {
         super();
         this.rating = rating;
         this.price = price;
@@ -98,11 +99,11 @@ public class Business {
         this.transactions = transactions;
     }
 
-    public double getRating() {
+    public Double getRating() {
         return rating;
     }
 
-    public void setRating(double rating) {
+    public void setRating(Double rating) {
         this.rating = rating;
     }
 
@@ -217,5 +218,4 @@ public class Business {
     public void setTransactions(List<String> transactions) {
         this.transactions = transactions;
     }
-
 }

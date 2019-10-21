@@ -1,4 +1,6 @@
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.network;
+
+import com.chel.sangwa_sytles.YelpBusinessesSearchResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

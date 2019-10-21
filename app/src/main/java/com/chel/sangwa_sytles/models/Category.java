@@ -1,9 +1,8 @@
 
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-
 
 public class Category {
 
@@ -16,13 +15,13 @@ public class Category {
 
     /**
      * No args constructor for use in serialization
-     *
+     * 
      */
     public Category() {
     }
 
     /**
-     *
+     * 
      * @param title
      * @param alias
      */

@@ -1,5 +1,5 @@
 
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -8,35 +8,35 @@ public class Location {
 
     @SerializedName("city")
     @Expose
-    private String city;
+    public String city;
     @SerializedName("country")
     @Expose
-    private String country;
+    public String country;
     @SerializedName("address2")
     @Expose
-    private String address2;
+    public String address2;
     @SerializedName("address3")
     @Expose
-    private String address3;
+    public String address3;
     @SerializedName("state")
     @Expose
-    private String state;
+    public String state;
     @SerializedName("address1")
     @Expose
-    private String address1;
+    public String address1;
     @SerializedName("zip_code")
     @Expose
-    private String zipCode;
+    public String zipCode;
 
     /**
      * No args constructor for use in serialization
-     *
+     * 
      */
     public Location() {
     }
 
     /**
-     *
+     * 
      * @param zipCode
      * @param state
      * @param address1
@@ -110,6 +110,11 @@ public class Location {
 
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s, %s, %s %s", this.address1, this.city, this.state, this.zipCode);
     }
 
 }

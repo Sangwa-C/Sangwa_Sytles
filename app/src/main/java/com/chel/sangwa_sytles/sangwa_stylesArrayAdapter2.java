@@ -4,7 +4,7 @@ import android.content.Context;
 import android.widget.ArrayAdapter;
 
 
-class sangwa_stylesArrayAdapter2 extends ArrayAdapter {
+public class sangwa_stylesArrayAdapter2 extends ArrayAdapter {
     private Context mContext;
     private String[] mMalls;
 

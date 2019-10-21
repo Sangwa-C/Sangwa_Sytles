@@ -1,4 +1,4 @@
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,9 @@ import android.widget.AdapterView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.chel.sangwa_sytles.R;
+import com.chel.sangwa_sytles.sangwa_stylesArrayAdapter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

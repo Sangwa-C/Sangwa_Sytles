@@ -1,18 +1,24 @@
-package com.chel.sangwa_sytles;
-
-import     androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+package com.chel.sangwa_sytles.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.chel.sangwa_sytles.MallsListAdapter;
+import com.chel.sangwa_sytles.R;
+import com.chel.sangwa_sytles.YelpBusinessesSearchResponse;
+import com.chel.sangwa_sytles.models.Business;
+import com.chel.sangwa_sytles.network.YelpApi;
+import com.chel.sangwa_sytles.network.YelpClient;
 
 import java.util.List;
 
@@ -25,10 +31,14 @@ import retrofit2.Response;
 public class MallsActivity extends AppCompatActivity {
     private static final String TAG = MallsActivity.class.getSimpleName();
 
-    @BindView(R.id.locationTextView) TextView mLocationTextView;
+    @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
     @BindView(R.id.listView) ListView mListView;
     @BindView(R.id.errorTextView) TextView mErrorTextView;
     @BindView(R.id.progressBar) ProgressBar mProgressBar;
+
+    private MallsListAdapter mAdapter;
+
+    public List<Business> malls;
 
 
     @Override
@@ -62,21 +72,14 @@ public class MallsActivity extends AppCompatActivity {
                 hideProgressBar();
 
                 if (response.isSuccessful()) {
-                    List<Business> mallsList = response.body().getBusinesses();
-                    String[] malls = new String[mallsList.size()];
-//                    String[] categories = new String[mallsList.size()];
+                    malls = response.body().getBusinesses();
+                    mAdapter = new MallsListAdapter(MallsActivity.this, malls);
+                    mRecyclerView.setAdapter(mAdapter);
+                    RecyclerView.LayoutManager layoutManager =
+                            new LinearLayoutManager(MallsActivity.this);
+                    mRecyclerView.setLayoutManager(layoutManager);
+                    mRecyclerView.setHasFixedSize(true);
 
-                    for (int i = 0; i < malls.length; i++){
-                        malls[i] = mallsList.get(i).getName();
-                    }
-
-//                    for (int i = 0; i < categories.length; i++) {
-//                        Category category = mallsList.get(i).getCategories().get(0);
-//                        categories[i] = category.getTitle();
-//                    }
-
-                    ArrayAdapter adapter = new sangwa_stylesArrayAdapter2(MallsActivity.this, android.R.layout.simple_list_item_1, malls);
-                    mListView.setAdapter(adapter);
 
                     showRestaurants();
                 } else {
@@ -102,8 +105,7 @@ public class MallsActivity extends AppCompatActivity {
     }
 
     private void showRestaurants() {
-        mListView.setVisibility(View.VISIBLE);
-        mLocationTextView.setVisibility(View.VISIBLE);
+        mRecyclerView.setVisibility(View.VISIBLE);
     }
 
     private void hideProgressBar() {

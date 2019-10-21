@@ -1,34 +1,33 @@
 
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.models;
 
-import com.chel.sangwa_sytles.models.Business;
-import com.chel.sangwa_sytles.models.Region;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
+
 public class YelpBusinessesSearchResponse {
 
     @SerializedName("total")
     @Expose
-    private Integer total;
+    public Integer total;
     @SerializedName("businesses")
     @Expose
-    private List<Business> businesses = null;
+    public List<Business> businesses = null;
     @SerializedName("region")
     @Expose
-    private Region region;
+    public Region region;
 
     /**
      * No args constructor for use in serialization
-     *
+     * 
      */
     public YelpBusinessesSearchResponse() {
     }
 
     /**
-     *
+     * 
      * @param region
      * @param total
      * @param businesses

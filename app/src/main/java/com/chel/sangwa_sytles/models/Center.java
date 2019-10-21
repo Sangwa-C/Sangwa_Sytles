@@ -1,31 +1,31 @@
 
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Coordinates {
+public class Center {
 
     @SerializedName("latitude")
     @Expose
-    private Double latitude;
+    public Double latitude;
     @SerializedName("longitude")
     @Expose
-    private Double longitude;
+    public Double longitude;
 
     /**
      * No args constructor for use in serialization
-     *
+     * 
      */
-    public Coordinates() {
+    public Center() {
     }
 
     /**
-     *
+     * 
      * @param longitude
      * @param latitude
      */
-    public Coordinates(Double latitude, Double longitude) {
+    public Center(Double latitude, Double longitude) {
         super();
         this.latitude = latitude;
         this.longitude = longitude;
