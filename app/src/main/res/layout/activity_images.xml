@@ -109,26 +109,25 @@
 
         <EditText
             android:id="@+id/clotheWanted"
-            android:layout_width="wrap_content"
+            android:layout_width="179dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
-            android:background="#84AFAC"
-            android:hint="Search From our store"
+            android:background="#25533D"
+            android:hint="Store"
             android:padding="10dp"
             android:textColor="#A78175" />
 
         <EditText
             android:id="@+id/locationEditText"
-            android:layout_width="208dp"
+            android:layout_width="239dp"
             android:layout_height="wrap_content"
             android:layout_above="@+id/findRestaurantsButton"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
-            android:background="#84BFAC"
-            android:hint="Search Boutiques"
-            android:padding="10dp"
-            />
+            android:background="#255300"
+            android:hint="Boutiques"
+            android:padding="10dp" />
 
 
     </LinearLayout>
@@ -141,7 +140,7 @@
 
         <Button
             android:id="@+id/listedButton"
-            android:layout_width="196dp"
+            android:layout_width="181dp"
             android:layout_height="wrap_content"
             android:background="#25533D"
             android:text="Store"
@@ -159,7 +158,7 @@
             android:layout_centerHorizontal="true"
             android:text="Boutiques"
             android:textColor="#FFA78D"
-            android:background="@color/colorAccent"
+            android:background="#255300"
             />
 
 
