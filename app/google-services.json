@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "47390788003",
+    "firebase_url": "https://sangwasytles.firebaseio.com",
+    "project_id": "sangwasytles",
+    "storage_bucket": "sangwasytles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47390788003:android:755424ed3c28a87733b216",
+        "android_client_info": {
+          "package_name": "com.chel.sangwa_sytles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47390788003-r1vdg21u7bo8jj5fqt1rtfi9jo8fb1q0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chel.sangwa_sytles",
+            "certificate_hash": "71b1d63ae64e5c0a0b945835272b231f4f538952"
+          }
+        },
+        {
+          "client_id": "47390788003-6f9br27e86qbshbjlvfour0c5hjks8ik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb-XeCHSToQ3dT6-MseGgbK1pFbXeoKuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47390788003-6f9br27e86qbshbjlvfour0c5hjks8ik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

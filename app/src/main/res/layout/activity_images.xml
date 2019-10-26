@@ -84,9 +84,7 @@
             android:id="@+id/image5"
             android:layout_width="202dp"
             android:layout_height="95dp"
-            android:src="@drawable/women_sports"
-
-            >
+            android:src="@drawable/women_sports">
 
         </ImageView>
 
@@ -105,7 +103,7 @@
         android:layout_below="@+id/layout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="20dp">
 
         <EditText
             android:id="@+id/clotheWanted"
@@ -128,7 +126,6 @@
             android:background="#255300"
             android:hint="Boutiques"
             android:padding="10dp" />
-
 
     </LinearLayout>
 
