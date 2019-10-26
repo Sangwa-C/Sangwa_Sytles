@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import com.chel.sangwa_sytles.MallPagerAdapter;
+import com.chel.sangwa_sytles.MallAdapters.MallPagerAdapter;
 import com.chel.sangwa_sytles.R;
 import com.chel.sangwa_sytles.models.Business;
 

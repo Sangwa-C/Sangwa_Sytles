@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.chel.sangwa_sytles.R;
-import com.chel.sangwa_sytles.sangwa_stylesArrayAdapter;
+import com.chel.sangwa_sytles.MallAdapters.sangwa_stylesArrayAdapter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

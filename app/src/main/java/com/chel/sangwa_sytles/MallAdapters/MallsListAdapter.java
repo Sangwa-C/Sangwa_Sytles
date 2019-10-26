@@ -1,4 +1,4 @@
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.MallAdapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.chel.sangwa_sytles.R;
 import com.chel.sangwa_sytles.models.Business;
 import com.chel.sangwa_sytles.ui.MallsDetailActivity;
 import com.squareup.picasso.Picasso;

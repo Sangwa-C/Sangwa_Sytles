@@ -1,4 +1,4 @@
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.MallAdapters;
 
 import android.content.Context;
 import android.widget.ArrayAdapter;

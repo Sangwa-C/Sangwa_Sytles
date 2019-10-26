@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.chel.sangwa_sytles.MallsListAdapter;
+import com.chel.sangwa_sytles.MallAdapters.MallsListAdapter;
 import com.chel.sangwa_sytles.R;
 import com.chel.sangwa_sytles.YelpBusinessesSearchResponse;
 import com.chel.sangwa_sytles.models.Business;

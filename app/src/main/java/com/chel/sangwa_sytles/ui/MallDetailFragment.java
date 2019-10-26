@@ -1,4 +1,4 @@
-package com.chel.sangwa_sytles;
+package com.chel.sangwa_sytles.ui;
 
 
 import android.content.Intent;
@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.chel.sangwa_sytles.R;
 import com.chel.sangwa_sytles.models.Business;
 import com.chel.sangwa_sytles.models.Category;
 import com.squareup.picasso.Picasso;
