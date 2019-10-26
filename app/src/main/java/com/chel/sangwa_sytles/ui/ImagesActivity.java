@@ -5,16 +5,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.chel.sangwa_sytles.Constants;
 import com.chel.sangwa_sytles.R;
-import com.chel.sangwa_sytles.ui.ClothesActivity;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class ImagesActivity extends AppCompatActivity implements View.OnClickListener  {
+
+    private DatabaseReference mSearchedMallLocationReference;
 
     @BindView(R.id.listedButton) Button mListedButton;
     @BindView(R.id.clotheWanted) EditText mClotheWanted;
@@ -23,7 +28,10 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        mSearchedMallLocationReference = FirebaseDatabase
+                .getInstance()
+                .getReference()
+                .child(Constants.FIREBASE_CHILD_SEARCHED_LOCATION);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_images);
 
@@ -32,7 +40,12 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
 
         mListedButton.setOnClickListener(this);
         mFindMallButton.setOnClickListener(this);
+
+
+
     }
+
+
     @Override
     public void onClick(View v){
 
@@ -44,13 +57,19 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         if(v == mFindMallButton) {
-            String rwanda = mLocationEditText.getText().toString();
+            String kigali = mLocationEditText.getText().toString();
+            saveLocationToFirebase(kigali);
             Intent cheHome = new Intent(ImagesActivity.this, MallsActivity.class);
-           cheHome.putExtra("kigali", rwanda);
+           cheHome.putExtra("kigali", kigali);
             startActivity(cheHome);
         }
+    }
 
 
+
+    public void saveLocationToFirebase(String kigali) {
+        mSearchedMallLocationReference.push().setValue(kigali);
+        Toast.makeText(this, "I am blessed", Toast.LENGTH_SHORT).show();
     }
 
 }

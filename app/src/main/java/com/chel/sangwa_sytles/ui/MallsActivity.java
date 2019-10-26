@@ -58,7 +58,7 @@ public class MallsActivity extends AppCompatActivity {
         Intent cheHome = getIntent();
 
         String mallLocation = cheHome.getStringExtra("kigali");
-        Toast.makeText(this, "" +mallLocation, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "" + mallLocation, Toast.LENGTH_SHORT).show();
 
         YelpApi client = YelpClient.getClient();
 
@@ -89,7 +89,8 @@ public class MallsActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<YelpBusinessesSearchResponse> call, Throwable t) {
-
+                hideProgressBar();
+                showFailureMessage();
             }
         });
     }
