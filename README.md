@@ -56,6 +56,12 @@ In this applications users can buy clothe both woman and amn, ranging from summe
 
 ## Screenshots From the project
 <img src="images/login.png">
+<img src="images/Signup.png">
+<img src="images/home.png">
+<img src="images/clothes.png">
+<img src="images/imagelist.png">
+<img src="images/detail.png">
+
  
 ## Support and contact details
 If you any issues or have questions, ideas or concerns contact us on chelseasabinesangwa@gmail.com.
