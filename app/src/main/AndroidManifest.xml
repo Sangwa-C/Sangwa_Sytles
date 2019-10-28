@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
-        <activity android:name=".ui.MallsDetailActivity"></activity>
+        <activity android:name=".ui.NewAccountActivity"></activity>
+        <activity android:name=".ui.MallsDetailActivity" />
         <activity android:name=".ui.ClothesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
