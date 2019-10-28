@@ -54,6 +54,32 @@ In this applications users can buy clothe both woman and amn, ranging from summe
 * Gradle
 * Android Studio
 
+## Installation guide   
+**{follow the below instructions for set up.}**
+    
+   1. You will need Internet connection.
+   
+   2. You need to  Install Android Studio.
+   
+   3. You need to  Install Emulator for testing.
+
+   4. You need to get into the Rest_api Repository.
+    
+     Link:-> https://github.com/Sangwa-C/Sangwa_Sytles/tree/version_3.3
+        
+   4. From there you can access the Sangwa_Sytles project.
+    
+   5. Clone the project.
+    
+   6. get into project folder (cd into project).
+
+   7. If you have all the Pre-requisites you can run the application.
+    
+    Run the Emulator or run it the phone
+    
+    
+**Keep in mind u can just access it on the telephone by downloading it using the app-debug.apk in the build**
+
 ## Screenshots From the project
 <p float="left">
   <img width="285" height="450" src="images/login.png"/>
