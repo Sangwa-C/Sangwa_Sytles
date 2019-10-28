@@ -10,38 +10,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/NoActionBarTheme">
-        <activity android:name=".ui.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        android:theme="@style/AppTheme">
+
 
         <activity android:name=".ui.NewAccountActivity" />
 
         <activity android:name=".ui.MallsDetailActivity" />
 
         <activity android:name=".ui.ClothesActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.ClothesActivity" />
         </activity>
 
         <activity android:name=".ui.MallsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.chel.sangwa_sytles.ui.MallsActivity" />
+
         </activity>
 
         <activity android:name=".ui.MainActivity">
         </activity>
 
         <activity android:name=".ui.ImagesActivity">
+
+        </activity>
+        <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

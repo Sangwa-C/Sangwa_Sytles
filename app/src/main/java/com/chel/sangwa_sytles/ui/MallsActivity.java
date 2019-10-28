@@ -76,7 +76,7 @@ public class MallsActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(Call<YelpBusinessesSearchResponse> call, Response<YelpBusinessesSearchResponse> response) {
-                Toast.makeText(MallsActivity.this, ""+ call, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MallsActivity.this, ""+ call, Toast.LENGTH_SHORT).show();
                 hideProgressBar();
 
                 if (response.isSuccessful()) {

@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void createAuthProgressDialog(){
         mAuthProgressDialog = new ProgressDialog(this);
         mAuthProgressDialog.setTitle("Loading...");
-        mAuthProgressDialog.setMessage("Authenticating with Firebase...");
+        mAuthProgressDialog.setMessage("Validating with Firebase...");
         mAuthProgressDialog.setCancelable(false);
     }
 
@@ -96,7 +96,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 mAuthProgressDialog.dismiss();
-                Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish();
                 if(!task.isSuccessful()){
                     Log.w(TAG, "signInWithEmail", task.getException());
                     Toast.makeText(LoginActivity.this, "Authentication failed.", Toast.LENGTH_LONG).show();
@@ -105,11 +108,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
     }
 
-    @Override
-    public void onStart(){
-        super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
-    }
+//    @Override
+//    public void onStart(){
+//        super.onStart();
+//        mAuth.addAuthStateListener(mAuthListener);
+//    }
 
     @Override
     public void onStop() {

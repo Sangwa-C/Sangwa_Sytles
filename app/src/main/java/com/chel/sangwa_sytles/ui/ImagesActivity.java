@@ -8,10 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.chel.sangwa_sytles.Constants;
 import com.chel.sangwa_sytles.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,6 +28,8 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
 
     private DatabaseReference mSearchedMallLocationReference;
     private ValueEventListener mSearchedLocationReferenceListener;
+    private FirebaseAuth mAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
 
     @BindView(R.id.listedButton) Button mListedButton;
     @BindView(R.id.clotheWanted) EditText mClotheWanted;
@@ -53,13 +58,25 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
             public void onCancelled(DatabaseError databaseError) {
 
             }
-
         });
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_images);
         ButterKnife.bind(this);
 
+        mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null) {
+                    getSupportActionBar().setTitle("hello, " + user.getDisplayName() + " !" );
+                } else {
+
+                }
+            }
+        };
         mListedButton.setOnClickListener(this);
         mFindMallButton.setOnClickListener(this);
     }
@@ -96,6 +113,20 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
     public void saveLocationToFirebase(String location) {
         mSearchedMallLocationReference.push().setValue(location);
         Toast.makeText(this, "I am blessed", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mAuthListener != null) {
+            mAuth.removeAuthStateListener(mAuthListener);
+        }
     }
 
 }
