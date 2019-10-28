@@ -61,7 +61,7 @@ In this applications users can buy clothe both woman and amn, ranging from summe
    <img width="270" height="450" src="images/home.png"/>
 </p>
 
-<p left="500">
+<p align="center">
  
    <img width="300" height="450" src="images/clothes.png"/>
 </p>
