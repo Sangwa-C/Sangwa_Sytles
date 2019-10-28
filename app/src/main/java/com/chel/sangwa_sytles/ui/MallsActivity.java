@@ -1,6 +1,7 @@
 package com.chel.sangwa_sytles.ui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.chel.sangwa_sytles.Constants;
 import com.chel.sangwa_sytles.MallAdapters.MallsListAdapter;
 import com.chel.sangwa_sytles.R;
 import com.chel.sangwa_sytles.YelpBusinessesSearchResponse;
@@ -39,6 +41,10 @@ public class MallsActivity extends AppCompatActivity {
     private MallsListAdapter mAdapter;
 
     public List<Business> malls;
+
+    private SharedPreferences mSharedPreferences;
+    private SharedPreferences.Editor mEditor;
+    private String mRecentAddress;
 
 
     @Override
@@ -111,5 +117,9 @@ public class MallsActivity extends AppCompatActivity {
 
     private void hideProgressBar() {
         mProgressBar.setVisibility(View.GONE);
+    }
+
+    private void addToSharedPreferences(String location) {
+        mEditor.putString(Constants.PREFERENCES_LOCATION_KEY, location).apply();
     }
 }

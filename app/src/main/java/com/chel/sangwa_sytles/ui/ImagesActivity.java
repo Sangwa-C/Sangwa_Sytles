@@ -83,18 +83,18 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         if(v == mFindMallButton) {
-            String kigali = mLocationEditText.getText().toString();
-            saveLocationToFirebase(kigali);
+            String location = mLocationEditText.getText().toString();
+            saveLocationToFirebase(location);
             Intent cheHome = new Intent(ImagesActivity.this, MallsActivity.class);
-           cheHome.putExtra("kigali", kigali);
+           cheHome.putExtra("kigali", location);
             startActivity(cheHome);
         }
     }
 
 
 
-    public void saveLocationToFirebase(String kigali) {
-        mSearchedMallLocationReference.push().setValue(kigali);
+    public void saveLocationToFirebase(String location) {
+        mSearchedMallLocationReference.push().setValue(location);
         Toast.makeText(this, "I am blessed", Toast.LENGTH_SHORT).show();
     }
 
