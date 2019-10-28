@@ -10,12 +10,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
+import com.chel.sangwa_sytles.Constants;
 import com.chel.sangwa_sytles.R;
 import com.chel.sangwa_sytles.models.Business;
 import com.chel.sangwa_sytles.models.Category;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
@@ -39,6 +43,7 @@ public class MallDetailFragment extends Fragment  implements View.OnClickListene
     @BindView(R.id.websiteTextView) TextView mWebsiteLabel;
     @BindView(R.id.phoneTextView) TextView mPhoneLabel;
     @BindView(R.id.addressTextView) TextView mAddressLabel;
+    @BindView(R.id.saveMall) TextView mSaveMallText;
 
 
 
@@ -85,6 +90,8 @@ public class MallDetailFragment extends Fragment  implements View.OnClickListene
         mPhoneLabel.setOnClickListener(this);
         mAddressLabel.setOnClickListener(this);
 
+        mSaveMallText.setOnClickListener(this);
+
         return view;
     }
     @Override
@@ -94,17 +101,27 @@ public class MallDetailFragment extends Fragment  implements View.OnClickListene
                     Uri.parse(mMall.getUrl()));
             startActivity(webIntent);
         }
+
         if (v == mPhoneLabel) {
             Intent phoneIntent = new Intent(Intent.ACTION_DIAL,
                     Uri.parse("tel:" + mMall.getPhone()));
             startActivity(phoneIntent);
         }
+
         if (v == mAddressLabel) {
             Intent mapIntent = new Intent(Intent.ACTION_VIEW,
                     Uri.parse("geo:" + mMall.getCoordinates().getLatitude()
                             + "," + mMall.getCoordinates().getLongitude()
                             + "?q=(" + mMall.getName() + ")"));
             startActivity(mapIntent);
+        }
+
+        if (v == mSaveMallText) {
+            DatabaseReference restaurantRef = FirebaseDatabase
+                    .getInstance()
+                    .getReference(Constants.FIREBASE_CHILD_Malls);
+            restaurantRef.push().setValue(mMall);
+            Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
         }
     }
 
