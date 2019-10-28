@@ -56,17 +56,21 @@ In this applications users can buy clothe both woman and amn, ranging from summe
 
 ## Screenshots From the project
 <p float="left">
-  <img width="200" height="300" src="images/login.png"/>
-  <img width="200" height="300" src="images/Signup.png" /> 
-  <img width="200" height="300" src="images/home.png" />
+  <img width="300" height="400" src="images/login.png"/>
+  <img width="300" height="400" src="images/Signup.png" /> 
+  <img width="300" height="400" src="images/home.png" />
 </p>
 
-<img  width="200" height="300" src="images/login.png">
-<img width="200" height="300" src="images/Signup.png">
-<img width="1604" src="images/home.png">
-<img src="images/clothes.png">
-<img src="images/imagelist.png">
-<img src="images/detail.png">
+<p float="left">
+  <img width="300" height="400" src="images/home.png" />
+   <img width="300" height="400" src="images/clothes.png"/>
+</p>
+
+<p float="left">
+ 
+  <img width="300" height="400" src="images/imagelist.png" /> 
+  <img width="300" height="400" src="images/detail.png"/>
+</p>
 
  
 ## Support and contact details
