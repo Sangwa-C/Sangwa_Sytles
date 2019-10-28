@@ -56,9 +56,9 @@ In this applications users can buy clothe both woman and amn, ranging from summe
 
 ## Screenshots From the project
 <p float="left">
-  <img width="280" height="450" src="images/login.png"/>
-  <img width="280" height="450" src="images/Signup.png"/> 
-   <img width="280" height="450" src="images/home.png"/>
+  <img width="285" height="450" src="images/login.png"/>
+  <img width="290" height="450" src="images/Signup.png"/> 
+   <img width="285" height="450" src="images/home.png"/>
 </p>
 
 <p align="center">
@@ -68,9 +68,9 @@ In this applications users can buy clothe both woman and amn, ranging from summe
 
 <p float="left">
   
-  <img width="280" height="450" src="images/list.png"/>
-  <img width="280" height="450" src="images/imagelist.png"/> 
-  <img width="280" height="450" src="images/detail.png"/>
+  <img width="285" height="450" src="images/list.png"/>
+  <img width="290" height="450" src="images/imagelist.png"/> 
+  <img width="285" height="450" src="images/detail.png"/>
 </p>
 
  
