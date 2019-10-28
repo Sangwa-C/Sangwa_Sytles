@@ -20,34 +20,6 @@ In this applications users can buy clothe both woman and amn, ranging from summe
     Output Example: "Blazers
                     Price: 15$"
 
-## Known Bugs
-
-<p>
-<g-emoji class="q-emoji"  alias="bug" >
-    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
- </g-emoji>This webpage may not suitable for all screen sizes.
-</p>
-
-
-<p>
-<g-emoji class="q-emoji"  alias="bug" >
-    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"  >
- </g-emoji>   Can submit empty or invalid input.
-</p> 
-
-<p>
-<g-emoji class="q-emoji"  alias="bug" >
-    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
- </g-emoji> User can not delete entry.
-</p>
-
-<p>
-<g-emoji class="q-emoji"  alias="bug" >
-    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
- </g-emoji> User can not update entry.
-</p>
-
-
 ## Technologies Used
 
 * JAVA
@@ -79,6 +51,35 @@ In this applications users can buy clothe both woman and amn, ranging from summe
     
     
 **Keep in mind u can just access it on the telephone by downloading it using the app-debug.apk in the build**
+
+## Known Bugs
+
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
+ </g-emoji>This webpage may not suitable for all screen sizes.
+</p>
+
+
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png"  >
+ </g-emoji>   Can submit empty or invalid input.
+</p> 
+
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
+ </g-emoji> User can not delete entry.
+</p>
+
+<p>
+<g-emoji class="q-emoji"  alias="bug" >
+    <img class="emoji" alt="bug" height="20" width="20"  src="https://github.githubassets.com/images/icons/emoji/unicode/1f41e.png">
+ </g-emoji> User can not update entry.
+</p>
+
+
 
 ## Screenshots From the project
 <p float="left">
