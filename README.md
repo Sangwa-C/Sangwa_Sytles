@@ -55,8 +55,8 @@ In this applications users can buy clothe both woman and amn, ranging from summe
 * Android Studio
 
 ## Screenshots From the project
-<img  width="1604" src="images/login.png">
-<img width="1604" src="images/Signup.png">
+<img  width="500" height="500" src="images/login.png">
+<img width="500" height="500" src="images/Signup.png">
 <img width="1604" src="images/home.png">
 <img src="images/clothes.png">
 <img src="images/imagelist.png">
