@@ -61,14 +61,14 @@ In this applications users can buy clothe both woman and amn, ranging from summe
 </p>
 
 <p float="left">
-  <img width="280" height="450" src="images/home.png"/>
-   <img width="280" height="450" src="images/list.png"/>
+  <img width="300" height="450" src="images/home.png"/>
+   <img width="300" height="450" src="images/list.png"/>
 </p>
 
 <p float="left">
-  <img width="280" height="450" src="images/clothes.png"/>
-  <img width="300" height="450" src="images/imagelist.png"/> 
-  <img width="300" height="450" src="images/detail.png"/>
+  <img width="270" height="450" src="images/clothes.png"/>
+  <img width="270" height="450" src="images/imagelist.png"/> 
+  <img width="270" height="450" src="images/detail.png"/>
 </p>
 
  
@@ -84,3 +84,4 @@ If you any issues or have questions, ideas or concerns contact us on chelseasabi
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  
   MIT Copyright (c) 2019 Sangwa Sabine Chelsea. # Sangwa_Styles
+  
