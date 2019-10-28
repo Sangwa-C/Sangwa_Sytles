@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "47390788003",
-    "firebase_url": "https://sangwasytles.firebaseio.com",
-    "project_id": "sangwasytles",
-    "storage_bucket": "sangwasytles.appspot.com"
+    "project_number": "814365615591",
+    "firebase_url": "https://sangwasytles-a4358.firebaseio.com",
+    "project_id": "sangwasytles-a4358",
+    "storage_bucket": "sangwasytles-a4358.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:47390788003:android:755424ed3c28a87733b216",
+        "mobilesdk_app_id": "1:814365615591:android:2889b40db8de09ef280942",
         "android_client_info": {
           "package_name": "com.chel.sangwa_sytles"
         }
       },
       "oauth_client": [
         {
-          "client_id": "47390788003-r1vdg21u7bo8jj5fqt1rtfi9jo8fb1q0.apps.googleusercontent.com",
+          "client_id": "814365615591-kkvdnvqgqdsd73fdf3hgi45lcfrm8ber.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.chel.sangwa_sytles",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "47390788003-6f9br27e86qbshbjlvfour0c5hjks8ik.apps.googleusercontent.com",
+          "client_id": "814365615591-dq7lujed30iafeqmdft71v4qumvbtsvh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBb-XeCHSToQ3dT6-MseGgbK1pFbXeoKuo"
+          "current_key": "AIzaSyCNqcB2BCJCUer1lec1NrmhO-ig1tJX-Kk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "47390788003-6f9br27e86qbshbjlvfour0c5hjks8ik.apps.googleusercontent.com",
+              "client_id": "814365615591-dq7lujed30iafeqmdft71v4qumvbtsvh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
