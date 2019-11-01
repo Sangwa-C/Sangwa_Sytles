@@ -136,7 +136,9 @@ public class NewAccountActivity extends AppCompatActivity implements View.OnClic
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
+
                             Log.d(TAG, user.getDisplayName());
+
                             Toast.makeText(NewAccountActivity.this, "The display name has ben set", Toast.LENGTH_LONG).show();
                         }
                     }

@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -112,7 +111,7 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
 
     public void saveLocationToFirebase(String location) {
         mSearchedMallLocationReference.push().setValue(location);
-        Toast.makeText(this, "I am blessed", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "I am blessed", Toast.LENGTH_SHORT).show();
     }
 
     @Override
