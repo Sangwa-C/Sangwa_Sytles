@@ -3,6 +3,8 @@ package com.chel.sangwa_sytles.ui;
 import android.view.GestureDetector;
 
 public class DetectSwipeGestureListener extends GestureDetector.SimpleOnGestureListener{
+    public void setActivity(TipsActivity tipsActivity) {
+    }
 
 //    private static int MIN_SWIPE_DISTANCE_X = 100;
 //    private static int MIN_SWIPE_DISTANCE_Y = 100;
