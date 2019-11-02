@@ -9,6 +9,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,6 +38,7 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.clotheWanted) EditText mClotheWanted;
     @BindView(R.id.findMallButton) Button mFindMallButton;
     @BindView(R.id.locationEditText) EditText mLocationEditText;
+    @BindView(R.id.wordsTextView) TextView mWordsTextView;
     @BindView(R.id.image1) ImageView image1;
     @BindView(R.id.image2) ImageView image2;
     @BindView(R.id.image3) ImageView image3;
@@ -152,6 +154,11 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
             saveLocationToFirebase(location);
             Intent cheHome = new Intent(ImagesActivity.this, MallsActivity.class);
            cheHome.putExtra("kigali", location);
+            startActivity(cheHome);
+        }
+
+        if(v == mWordsTextView) {
+            Intent cheHome = new Intent(ImagesActivity.this, TipsActivity.class);
             startActivity(cheHome);
         }
     }

@@ -165,7 +165,7 @@
 
 
     <TextView
-        android:id="@+id/words"
+        android:id="@+id/wordsTextView"
         android:layout_width="231dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout5"
