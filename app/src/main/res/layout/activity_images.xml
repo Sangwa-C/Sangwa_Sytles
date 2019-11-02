@@ -82,7 +82,7 @@
             android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/image5"
+            android:id="@+id/image4"
             android:layout_width="202dp"
             android:layout_height="95dp"
             android:src="@drawable/women_sports">
@@ -90,7 +90,7 @@
         </ImageView>
 
         <ImageView
-            android:id="@+id/image6"
+            android:id="@+id/image5"
             android:layout_width="172dp"
             android:layout_height="95dp"
             android:src="@drawable/women2">

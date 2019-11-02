@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,6 +37,11 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.clotheWanted) EditText mClotheWanted;
     @BindView(R.id.findMallButton) Button mFindMallButton;
     @BindView(R.id.locationEditText) EditText mLocationEditText;
+    @BindView(R.id.image1) ImageView image1;
+    @BindView(R.id.image2) ImageView image2;
+    @BindView(R.id.image3) ImageView image3;
+    @BindView(R.id.image4) ImageView image4;
+    @BindView(R.id.image5) ImageView image5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +86,47 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
         };
         mListedButton.setOnClickListener(this);
         mFindMallButton.setOnClickListener(this);
+
+
+        image1.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation fa= AnimationUtils.loadAnimation(ImagesActivity.this,R.anim.sample_anim);
+                image1.startAnimation(fa);
+            }
+        } );
+
+        image2.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation fa= AnimationUtils.loadAnimation(ImagesActivity.this,R.anim.sample_anim);
+                image2.startAnimation(fa);
+            }
+        } );
+
+        image3.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation fa= AnimationUtils.loadAnimation(ImagesActivity.this,R.anim.sample_anim);
+                image3.startAnimation(fa);
+            }
+        } );
+
+        image4.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation fa= AnimationUtils.loadAnimation(ImagesActivity.this,R.anim.sample_anim);
+                image4.startAnimation(fa);
+            }
+        } );
+
+        image5.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation fa= AnimationUtils.loadAnimation(ImagesActivity.this,R.anim.sample_anim);
+                image5.startAnimation(fa);
+            }
+        } );
     }
 
     @Override
