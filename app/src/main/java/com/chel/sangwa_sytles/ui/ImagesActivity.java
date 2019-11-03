@@ -88,6 +88,7 @@ public class ImagesActivity extends AppCompatActivity implements View.OnClickLis
         };
         mListedButton.setOnClickListener(this);
         mFindMallButton.setOnClickListener(this);
+        mWordsTextView.setOnClickListener( this );
 
 
         image1.setOnClickListener( new View.OnClickListener() {

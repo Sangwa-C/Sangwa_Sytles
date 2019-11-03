@@ -53,7 +53,8 @@ public class DetectSwipeGestureListener extends GestureDetector.SimpleOnGestureL
 
     @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {
-        this.activity.displayMessage("Single Tap");
+        this.activity.displayMessage("* Add a motorcycle jacket.\n" +
+                "A good motorcycle jacket improves every outfit;");
         return true;
     }
 

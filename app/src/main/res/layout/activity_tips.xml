@@ -8,11 +8,14 @@
 
     <TextView
         android:id="@+id/FirstTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="53dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="168dp"
-        android:text="Tap On me" />
+        android:layout_marginTop="251dp"
+        android:text="Tap On me"
+        android:textColor="#1E5E50"
+        android:textSize="30sp"
+        app:fontFamily="@font/allura" />
 
 </RelativeLayout>
