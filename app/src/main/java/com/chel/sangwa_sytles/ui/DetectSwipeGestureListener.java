@@ -33,18 +33,21 @@ public class DetectSwipeGestureListener extends GestureDetector.SimpleOnGestureL
         // swipe left or right detector
         if (deltaXAbs >= MIN_SWIPE_DISTANCE_X && deltaXAbs <= MAX_SWIPE_DISTANCE_X){
             if(deltaX > 0){
-                this.activity.displayMessage( "Swipe To Left" );
+                this.activity.displayMessage( "*Match the color of your socks to the color of your trousers.*\n\n" +
+                        "Most of the time. When you want to be daring, wear a bright, contrasting color instead." );
             } else {
-                this.activity.displayMessage( "Swipe To Right" );
+                this.activity.displayMessage( "*Iron your own shirts.*\n\n" +
+                        "It’s a useful skill for traveling, and it’ll save you money at home." );
             }
         }
 
         //swipe up or down detector
         if (deltaYAbs >= MIN_SWIPE_DISTANCE_Y && deltaYAbs <= MAX_SWIPE_DISTANCE_Y){
             if(deltaY > 0){
-                this.activity.displayMessage( "Swipe Up" );
+                this.activity.displayMessage( "* Wear something really small with something really big* \n\n" + " Not just big with small, but also hard with soft, tight with loose, and heavy with light." );
             } else {
-                this.activity.displayMessage( "Swipe Down" );
+                this.activity.displayMessage( "*Do a half-assed tuck job*\n\n" +
+                        "just grab that middle front piece, tuck it down, and watch your style cred increase instantaneously by a factor of 10.");
             }
         }
 
@@ -53,14 +56,16 @@ public class DetectSwipeGestureListener extends GestureDetector.SimpleOnGestureL
 
     @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {
-        this.activity.displayMessage("* Add a motorcycle jacket.\n" +
-                "A good motorcycle jacket improves every outfit;");
+        this.activity.displayMessage("* Add a motorcycle jacket *\n\n" +
+                "A good motorcycle jacket improves every outfit.");
         return true;
     }
 
     @Override
     public boolean onDoubleTap(MotionEvent e) {
-        this.activity.displayMessage( "Double Tap" );
+        this.activity.displayMessage( "*Wear the wrong shoes*\n\n" +
+                "Trade your high heels for flat booties, your sneakers for high heels, and your sandals for sneakers." +
+                " The more wrong it feels, the more right it is." );
         return true;
     }
 

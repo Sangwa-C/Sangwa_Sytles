@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/FirstTextView"
-        android:layout_width="260dp"
-        android:layout_height="53dp"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="251dp"
