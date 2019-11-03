@@ -125,4 +125,6 @@ public class MallDetailFragment extends Fragment  implements View.OnClickListene
         }
     }
 
+
+
 }

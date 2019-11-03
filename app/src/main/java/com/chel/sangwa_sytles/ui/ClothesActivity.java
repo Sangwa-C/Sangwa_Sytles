@@ -2,6 +2,8 @@ package com.chel.sangwa_sytles.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -54,6 +56,13 @@ public class ClothesActivity extends AppCompatActivity {
             }
         });
         mClothesTextView.setText("For this search "  + " ' "  + clothType   + " ' " + " we have: ");
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
 
