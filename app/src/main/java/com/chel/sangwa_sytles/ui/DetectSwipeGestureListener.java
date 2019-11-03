@@ -44,7 +44,7 @@ public class DetectSwipeGestureListener extends GestureDetector.SimpleOnGestureL
         //swipe up or down detector
         if (deltaYAbs >= MIN_SWIPE_DISTANCE_Y && deltaYAbs <= MAX_SWIPE_DISTANCE_Y){
             if(deltaY > 0){
-                this.activity.displayMessage( "* Wear something really small with something really big* \n\n" + " Not just big with small, but also hard with soft, tight with loose, and heavy with light." );
+                this.activity.displayMessage( "*Wear something really small with something really big* \n\n" + " Not just big with small, but also hard with soft, tight with loose, and heavy with light." );
             } else {
                 this.activity.displayMessage( "*Do a half-assed tuck job*\n\n" +
                         "just grab that middle front piece, tuck it down, and watch your style cred increase instantaneously by a factor of 10.");
@@ -56,7 +56,7 @@ public class DetectSwipeGestureListener extends GestureDetector.SimpleOnGestureL
 
     @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {
-        this.activity.displayMessage("* Add a motorcycle jacket *\n\n" +
+        this.activity.displayMessage("*Add a motorcycle jacket*\n\n" +
                 "A good motorcycle jacket improves every outfit.");
         return true;
     }
