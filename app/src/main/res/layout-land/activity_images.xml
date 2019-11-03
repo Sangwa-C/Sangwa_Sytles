@@ -9,19 +9,15 @@
 
     <TextView
         android:id="@+id/hGallery"
-        android:layout_width="wrap_content"
+        android:layout_width="253dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="130dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginRight="131dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginRight="192dp"
         android:layout_marginBottom="20dp"
         android:layout_weight="1"
         android:text="Gallery"
@@ -31,43 +27,44 @@
         app:fontFamily="@font/allura" />
 
     <LinearLayout
-            android:id="@+id/layout1"
-            android:layout_weight="7"
-            android:layout_below="@+id/hGallery"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:id="@+id/layout1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/hGallery"
+        android:layout_weight="7">
 
         <ImageView
             android:id="@+id/image1"
-            android:layout_width="199dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="97dp"
             android:layout_marginBottom="10dp"
             android:src="@drawable/twomen">
 
         </ImageView>
 
-            <ImageView
-                android:id="@+id/image2"
-                android:layout_width="175dp"
-                android:layout_height="100dp"
-                android:src="@drawable/men2"
-                android:layout_marginRight="50dp">
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/men2">
 
-            </ImageView>
+        </ImageView>
 
-        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="59dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/layout1"
-        android:layout_marginTop="2dp">
+        android:layout_marginTop="28dp">
 
         <ImageView
             android:id="@+id/image3"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
             android:src="@drawable/men">
 
@@ -77,14 +74,14 @@
     </LinearLayout>
 
     <LinearLayout
-            android:id="@+id/layout3"
-            android:layout_below="@+id/layout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:id="@+id/layout3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout2">
 
         <ImageView
             android:id="@+id/image4"
-            android:layout_width="202dp"
+            android:layout_width="150dp"
             android:layout_height="95dp"
             android:src="@drawable/women_sports">
 
@@ -92,24 +89,26 @@
 
         <ImageView
             android:id="@+id/image5"
-            android:layout_width="172dp"
+            android:layout_width="150dp"
             android:layout_height="95dp"
             android:src="@drawable/women2">
 
         </ImageView>
 
-        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout4"
-        android:layout_below="@+id/layout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_width="300dp"
+        android:layout_height="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp">
 
         <EditText
             android:id="@+id/clotheWanted"
-            android:layout_width="179dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
@@ -133,9 +132,11 @@
 
     <LinearLayout
         android:id="@+id/layout5"
-        android:layout_below="@+id/layout4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/layout4">
 
         <Button
             android:id="@+id/listedButton"
@@ -160,7 +161,6 @@
             android:textColor="#FFA78D" />
 
 
-
     </LinearLayout>
 
 
@@ -169,12 +169,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout5"
-        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="69dp"
         android:text="~shop or get design inspiration~ "
         android:textColor="#1E5E50"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:layout_centerInParent="true"
         app:fontFamily="@font/allura" />
 </RelativeLayout>
 
