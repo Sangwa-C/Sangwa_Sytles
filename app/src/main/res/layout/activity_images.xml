@@ -169,12 +169,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout5"
-        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="62dp"
         android:text="~shop or get design inspiration~ "
         android:textColor="#1E5E50"
-        android:textSize="18dp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        android:layout_centerInParent="true"
         app:fontFamily="@font/allura" />
 </RelativeLayout>
 

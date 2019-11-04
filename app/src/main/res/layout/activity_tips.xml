@@ -14,12 +14,11 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="22dp"
         android:layout_marginLeft="22dp"
-        android:layout_marginTop="97dp"
+        android:layout_marginTop="220dp"
         android:text="Tap On me"
         android:textColor="#1E5E50"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:fontFamily="@font/allura" />
-
 
 
 </RelativeLayout>

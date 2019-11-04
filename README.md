@@ -90,14 +90,14 @@ In this applications users can buy clothe both woman and amn, ranging from summe
 
 <p align="center">
  
-   <img width="300" height="450" src="images/clothes.png"/>
-   <img width="300" height="450" src="images/tips.png"/>
+   <img width="300" height="450" src="images/images.png"/>
+   <img width="300" height="450" src="images/store.png"/>
+   
 </p>
 
 <p float="left">
-  
-  <img width="285" height="450" src="images/list.png"/>
-  <img width="290" height="450" src="images/imagess.png"/> 
+  <img width="285" height="450" src="images/tips.png"/>
+  <img width="290" height="450" src="images/storeImage.png"/>
   <img width="285" height="450" src="images/detail.png"/>
 </p>
 
