@@ -56,6 +56,7 @@ public class ClothesActivity extends AppCompatActivity {
             }
         });
         mClothesTextView.setText("For this search "  + " ' "  + clothType   + " ' " + " we have: ");
+<<<<<<< HEAD:app/src/main/java/com/chel/sangwa_sytles/ui/ClothesActivity.java
     }
 
     @Override
@@ -63,6 +64,8 @@ public class ClothesActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
+=======
+>>>>>>> 0a5cba2586dbc1ae01e53a2d97fafd3f5cd605c1:app/src/main/java/com/chel/sangwa_sytles/ClothesActivity.java
     }
 
 

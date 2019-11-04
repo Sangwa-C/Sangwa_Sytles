@@ -4,7 +4,7 @@
 
 ## Description
 
-Sangwa Sytles is an e-commerce phone application written in the java using Android Studio.
+Sangwa Sytles is an E-commerce phone application written in the java using Android Studio.
 
 In this applications users can buy clothe both woman and amn, ranging from summer clothes to winter clothes.
 
