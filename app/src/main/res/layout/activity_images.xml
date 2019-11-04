@@ -31,11 +31,11 @@
         app:fontFamily="@font/allura" />
 
     <LinearLayout
-            android:id="@+id/layout1"
-            android:layout_weight="7"
-            android:layout_below="@+id/hGallery"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:id="@+id/layout1"
+        android:layout_weight="7"
+        android:layout_below="@+id/hGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/image1"
@@ -46,16 +46,16 @@
 
         </ImageView>
 
-            <ImageView
-                android:id="@+id/image2"
-                android:layout_width="175dp"
-                android:layout_height="100dp"
-                android:src="@drawable/men2"
-                android:layout_marginRight="50dp">
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="175dp"
+            android:layout_height="100dp"
+            android:src="@drawable/men2"
+            android:layout_marginRight="50dp">
 
-            </ImageView>
+        </ImageView>
 
-        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout2"
@@ -77,10 +77,10 @@
     </LinearLayout>
 
     <LinearLayout
-            android:id="@+id/layout3"
-            android:layout_below="@+id/layout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/image4"
@@ -98,13 +98,14 @@
 
         </ImageView>
 
-        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout4"
         android:layout_below="@+id/layout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
 
         <EditText
             android:id="@+id/clotheWanted"
@@ -176,5 +177,3 @@
         android:textStyle="bold"
         app:fontFamily="@font/allura" />
 </RelativeLayout>
-
-
